@@ -3,4 +3,4 @@ project(itoa C)
 
 set(CMAKE_C_STANDARD 11)
 
-add_library(itoa STATIC library.c)
+add_library(itoa SHARED library.c)
