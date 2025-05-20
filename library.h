@@ -41,7 +41,7 @@ extern "C"
  * The caller is responsible for freeing the allocated memory.
  * Handles both positive and negative numbers, as well as the edge case of 0.
  */
-char *itoa(long value)
+inline char *itoa(long value)
 {
     // Edge case: when the value is 0
     if (value == 0)
