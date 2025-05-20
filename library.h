@@ -43,7 +43,7 @@ extern "C"
  */
 char *itoa(long value)
 {
- // Edge case: when the value is 0
+    // Edge case: when the value is 0
     if (value == 0)
     {
         // Directly malloc the string
