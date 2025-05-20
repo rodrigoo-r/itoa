@@ -8,8 +8,12 @@
  * under certain conditions; type `show c' for details.
 */
 
-#include "library.h"
+#if defined(__cplusplus)
+extern "C"
+{
+#endif
 
+#include "library.h"
 #include <stdlib.h>
 
 // Define true/false values
@@ -19,6 +23,10 @@
 
 #ifndef FALSE
 #define FALSE 0
+#endif
+
+#ifndef NULL
+#define NULL ((void *)0)
 #endif
 
 /**
@@ -113,3 +121,7 @@ char *itoa(long value)
 
     return str;
 }
+
+#if defined(__cplusplus)
+}
+#endif

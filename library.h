@@ -11,6 +11,11 @@
 #ifndef ITOA_LIBRARY_H
 #define ITOA_LIBRARY_H
 
+#if defined(__cplusplus)
+extern "C"
+{
+#endif
+
 /**
  * Converts a long integer value to a dynamically allocated string.
  *
@@ -22,5 +27,9 @@
  * Handles both positive and negative numbers, as well as the edge case of 0.
  */
 char *itoa(long value);
+
+#if defined(__cplusplus)
+}
+#endif
 
 #endif //ITOA_LIBRARY_H
