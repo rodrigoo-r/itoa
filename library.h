@@ -47,7 +47,7 @@ inline char *itoa(long value)
     if (value == 0)
     {
         // Directly malloc the string
-        char *str = malloc(sizeof(char) * 2);
+        char *str = (char *) malloc(sizeof(char) * 2);
 
         // Check for memory allocation failure
         if (str == NULL)
@@ -87,7 +87,7 @@ inline char *itoa(long value)
     }
 
     // Allocate the string (+1 for the null terminator)
-    char *str = malloc(sizeof(char) * (chars + 2));
+    char *str = (char *) malloc(sizeof(char) * (chars + 2));
 
     // Check for memory allocation failure
     if (str == NULL)
