@@ -8,8 +8,8 @@
  * under certain conditions; type `show c' for details.
 */
 
-#ifndef ITOA_LIBRARY_H
-#define ITOA_LIBRARY_H
+#ifndef FLUENT_LIBC_ITOA_LIBRARY_H
+#define FLUENT_LIBC_ITOA_LIBRARY_H
 
 #if defined(__cplusplus)
 extern "C"
@@ -128,4 +128,4 @@ inline char *itoa(long value)
 }
 #endif
 
-#endif //ITOA_LIBRARY_H
+#endif //FLUENT_LIBC_ITOA_LIBRARY_H
