@@ -16,17 +16,8 @@ if(NOT FLUENT_LIBC_RELEASE) # Manually add libraries only if not in release mode
             GIT_TAG        master
     )
 
-    FetchContent_Declare(
-            types
-            GIT_REPOSITORY https://github.com/rodrigoo-r/types
-            GIT_TAG        master
-    )
-
     FetchContent_MakeAvailable(std_bool)
-    FetchContent_MakeAvailable(types)
 
     target_include_directories(itoa PRIVATE ${CMAKE_BINARY_DIR}/_deps/std_bool-src)
     target_link_libraries(itoa PRIVATE std_bool)
-    target_include_directories(itoa PRIVATE ${CMAKE_BINARY_DIR}/_deps/types-src)
-    target_link_libraries(itoa PRIVATE types)
 endif ()
