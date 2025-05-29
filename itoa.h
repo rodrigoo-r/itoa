@@ -19,9 +19,9 @@ extern "C"
 #include <stdlib.h>
 
 #ifndef FLUENT_LIBC_RELEASE
-#   include <std_bool.h>
+#   include <std_bool.h> // fluent_libc
 #else
-#   include <fluent/std_bool/std_bool.h>
+#   include <fluent/std_bool/std_bool.h> // fluent_libc
 #endif
 
 /**
